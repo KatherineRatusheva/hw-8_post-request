@@ -16,7 +16,6 @@ class App extends React.Component{
     axios.post('http://localhost:3001/auth/sign-in', { "phone": "+19254223749", "password": "123" }).then((response) => {
 
       this.setState({user: response.data})
-      console.log(response.data);
     })
   }
 
